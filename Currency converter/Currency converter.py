@@ -141,65 +141,69 @@ def run():
         arg_pesos = argentine_peso(colombian_pesos)
         arg_pesos = print(f"{user}, you have {arg_pesos} argentine pesos.")
     
-    if menu == 2:
+    elif menu == 2:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         aus_dollar = australian_dollar(colombian_pesos)
         aus_dollar = print(f"{user}, you have {aus_dollar} australian dollars.")
         
-    if menu == 3:
+    elif menu == 3:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         bra_real = brazilian_real(colombian_pesos)
         bra_real = print(f"{user}, you have {bra_real} brazilian reals.")
         
-    if menu == 4:
+    elif menu == 4:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         pound = british_pound(colombian_pesos)
         pound = print(f"{user}, you have {pound} british pounds.")
         
-    if menu == 5:
+    elif menu == 5:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         cad_dollar = canadian_dollar(colombian_pesos)
         cad_dollar = print(f"{user}, you have {cad_dollar} canadian dollars.")
         
-    if menu == 6:
+    elif menu == 6:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         chl_peso = chilean_peso(colombian_pesos)
         chl_peso = print(f"{user}, you have {chl_peso} chilean pesos.")
         
-    if menu == 7:
+    elif menu == 7:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         ch_yuan = chinese_yuan(colombian_pesos)
         ch_yuan = print(f"{user}, you have {ch_yuan} chinese yuannes.")
         
-    if menu == 8:
+    elif menu == 8:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         euro = euros(colombian_pesos)
         euro = print(f"{user}, you have {euro} euros.")
         
-    if menu == 9:
+    elif menu == 9:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         jp_yen = japanese_yen(colombian_pesos)
         jp_yen = print(f"{user}, you have {jp_yen} japanese yen.")
     
-    if menu == 10:
+    elif menu == 10:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         mex_peso = mexican_peso(colombian_pesos)
         mex_peso = print(f"{user}, you have {mex_peso} mexican pesos.")
         
-    if menu == 11:
+    elif menu == 11:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         per_sol = peruvian_sol(colombian_pesos)
         per_sol = print(f"{user}, you have {per_sol} peruvian sol.")
         
-    if menu == 12:
+    elif menu == 12:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         uru_peso = uruguayan_peso(colombian_pesos)
         uru_peso = print(f"{user}, you have {uru_peso} uruguayan peso.")
     
-    if menu == 13:
+    elif menu == 13:
         colombian_pesos = float(input(f"{user}, how many Colombian pesos you want to convert? "))
         dollar = us_dollar(colombian_pesos)
         dollar = print(f"{user}, you have {dollar} dollars.")
+        
+    else:
+        print("This option is not available, please try again.")
+        run()
         
     
 if __name__ == "__main__":
